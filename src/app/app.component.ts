@@ -44,5 +44,5 @@ export class AppComponent {
   
     //return annualData;
     this.resultsData = annualData;
-  }
+}
 }
