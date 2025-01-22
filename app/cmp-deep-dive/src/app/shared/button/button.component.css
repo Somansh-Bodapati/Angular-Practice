@@ -23,3 +23,7 @@
 :host:hover .icon {
   transform: translateX(4px);
 }
+
+:host ::ng-deep appButton {
+  font-size: 16px;
+}
