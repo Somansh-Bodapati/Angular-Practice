@@ -9,15 +9,13 @@ import { Component, HostBinding, HostListener, input, ViewEncapsulation } from '
   encapsulation: ViewEncapsulation.None,
   host: {
     class: 'control',
-    '(click)': 'onClick()'
+    //'(click)': 'onClick()'
   }
 })
 export class ControlComponent {
   //@HostBinding('class') className = 'control';
-  //@HostListener('click')
-  label = input.required<string>();
-
-  onClick(){
+  @HostListener('click') onClick(){
     console.log('Clicked');
   }
+  label = input.required<string>();
 }
