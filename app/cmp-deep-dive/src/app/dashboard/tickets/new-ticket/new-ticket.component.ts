@@ -11,9 +11,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './new-ticket.component.css'
 })
 export class NewTicketComponent {
-  onSubmit(title: String, ticketText: string) {
+  onSubmit(title: String, ticketText: string, ticketForm: HTMLFormElement){ {
     console.log(title);
     console.log(ticketText);
+    ticketForm.reset();
   }
-
+  }
 }
