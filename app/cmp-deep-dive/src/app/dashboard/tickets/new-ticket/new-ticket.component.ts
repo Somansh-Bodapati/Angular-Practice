@@ -11,7 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './new-ticket.component.css'
 })
 export class NewTicketComponent {
-  @ViewChild('ticketForm') private form?: ElementRef<HTMLFormElement>;
+  @ViewChild('form') private form?: ElementRef<HTMLFormElement>;
 
   onSubmit(title: String, ticketText: string){ {
     console.log(title);
