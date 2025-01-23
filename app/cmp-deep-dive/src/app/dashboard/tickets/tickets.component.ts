@@ -19,5 +19,7 @@ export class TicketsComponent {
       status: 'Open',
       id: Math.random().toString()
     }
+
+    this.tickets.push(ticket);
   }
 }
