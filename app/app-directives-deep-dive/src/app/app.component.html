@@ -11,6 +11,9 @@
   <p>Only ADMINS</p>
 </ng-template> -->
   
-<p *appAuth="'admin'">ONLY ADMINS</p>
+<p *appAuth="'admin'" class="protected-content admin">ONLY ADMINS</p>
+<p *appAuth="'user'" class="protected-content unauthenticated">How do you do my friend? There is absolutely nothing here buzz off.......!!!!!!!!!!!!</p>
+<p *appAuth="'guest'" class="protected-content authenticated">How do you do my friend? There.......!!!!!!!!!!!!</p>
 
 </main>
+
