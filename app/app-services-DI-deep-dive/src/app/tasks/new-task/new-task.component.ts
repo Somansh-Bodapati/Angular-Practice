@@ -13,8 +13,8 @@ export class NewTaskComponent {
   private formEl = viewChild<ElementRef<HTMLFormElement>>('form');
   private tasksService: TasksService;
 
-  constructor(){
-    this.tasksService = new TasksService();
+  constructor(tService: TasksService) {
+    this.tasksService = tService;
   }
 
   onAddTask(title: string, description: string) {
