@@ -11,8 +11,13 @@ import { TasksService } from '../tasks.service';
   imports: [TaskItemComponent],
 })
 export class TasksListComponent {
+  // Injecting the service
   private tasksService = inject(TasksService);
+
+  // Signal to store the selected filter
   selectedFilter = signal<string>('all');
+
+  // Read Only signal to make sure we dont edit and just display
   tasks = this.tasksService.allTasks;
 
   onChangeTasksFilter(filter: string) {
